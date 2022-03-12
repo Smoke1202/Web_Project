@@ -1,0 +1,17 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %} <!-- не забываем заранее загружать наши фильтры! -->
+
+{% block title %}
+News
+{% endblock title %}
+
+{% block content %}
+    <h1>Лента новостей</h1>
+    <hr>
+{% for new in news %}
+<p><h5>{{ new.name }} : {{ new.date_time }}</h5></p>
+<p>{{ new.description|truncatechars:50 | filtercen}}</p>
+{{ new.category.name | filtercen}}
+{% endfor %}
+{% endblock content %}
