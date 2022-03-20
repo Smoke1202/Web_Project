@@ -1,0 +1,15 @@
+{% extends 'flatpages/default.html' %}
+{% block title %}
+News
+{% endblock title %}
+
+{% block content %}
+
+{% for obj in filter.qs %}
+<h4>{{ obj.name }} : {{ obj.date_time|date:'d-m-Y h:i'}}</h4><br>
+<h6>Автор: {{ obj.author }}<br></h6>
+
+{{ obj.description }}
+{% endfor %}
+
+{% endblock content %}

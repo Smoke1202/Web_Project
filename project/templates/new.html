@@ -9,6 +9,8 @@ News
 
 <!-- В контенте на странице мы выводим сам товар, ID которого было передано в адрес -->
 {% block content %}
-<h3>{{ new.name }} : {{ new.date_time }}</h3>
-{{ new.description | filtercen}}
+<div class="brd">
+<p align="left"><h3>{{ new.name }} : {{ new.date_time |date:'d M Y' }}</h3></p>
+<p align="left">{{ new.description | filtercen}}</p><p align="left"> <a href="/news/">Вернуться на главную страницу</a> </p>
+    </div>
 {% endblock content %}
