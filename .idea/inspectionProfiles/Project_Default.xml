@@ -23,6 +23,14 @@
           <option value="project.simpleapp.models.Product.objects" />
           <option value="project.simpleapp.models.News.objects" />
           <option value="django.contrib.admin.utils.lookup_spawns_duplicates" />
+          <option value="project.simpleapp.views.Products.objects" />
+          <option value="project.simpleapp.models.Category.objects" />
+          <option value="project.simpleapp.views.ProductList.form_class" />
+          <option value="project.simpleapp.views.SearchList.qs" />
+          <option value="project.simpleapp.views.ProductList.get_filter" />
+          <option value="project.simpleapp.views.ProductList.GET" />
+          <option value="django.template.backends.django.forms" />
+          <option value="django.forms.forms.ModelForm" />
         </list>
       </option>
     </inspection_tool>
