@@ -74,11 +74,6 @@ TEMPLATES = [
     },
 ]
 
-LOGIN_URL = 'sign/login/'
-
-LOGIN_REDIRECT_URL = '/news/'
-
-ACCOUNT_FORMS = {'signup': 'sign.models.BasicSignupForm'}
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
@@ -120,6 +115,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/news/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/

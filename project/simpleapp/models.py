@@ -23,8 +23,10 @@ class Product(models.Model):
     def get_absolute_url(self):
         return f'/news/{self.id}'
 
+
 class Author(models.Model):
     name = models.CharField(max_length=50, unique=True)
 
     def __str__(self):
         return f'{self.name.title()}'
+
